@@ -11,11 +11,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RideRequested {
+public class RideEvent {
 
 	private Long rideId;
     private Long userId;
     private Long driverId;
-    private String status; // CREATED, ACCEPTED, COMPLETED
+    private Long rideAssignmentId;
+    private String status;
     private Instant createdAt;
+    private String cancelledReason;
+    private String denialReason;    
 }

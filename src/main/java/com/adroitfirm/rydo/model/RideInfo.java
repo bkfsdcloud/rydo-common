@@ -16,7 +16,8 @@ import lombok.NoArgsConstructor;
 public class RideInfo {
 
 	private long rideId;
-	private String driverId;
-	private String riderId;
+	private Long driverId;
+	private Long riderId;
+	private Long rideAssignmentId;
 	private String status;
 }
